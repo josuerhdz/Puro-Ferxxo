@@ -1,0 +1,93 @@
+/* Estilos del encabezado */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2; /* Coloca el encabezado sobre otros elementos */
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Estilos de la sección hero */
+#hero {
+    background-color: #fff; /* Cambia el fondo del hero */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Coloca el fondo sobre el encabezado */
+}
+
+#fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca el fondo detrás de otros elementos */
+}
+
+#foto img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2; /* Coloca la foto sobre el fondo */
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.info span {
+    font-weight: bold;
+    color: #666;
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilos de los iconos de redes sociales */
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilo para enlaces sin estilo */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+}
